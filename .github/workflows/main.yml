@@ -19,10 +19,10 @@ jobs:
         run: docker login --username ${{ secrets.DOCKER_USERNAME }} --password ${{ secrets.DOCKER_TOKEN }}
 
       - name: "bilding docker imge"
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/newone2 .
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/zezo1 .
 
       - name: "push to docker hup"
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/newone2 
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/zezo1 
 
       - name: "PRINTING A WELCOME"
-        run: echo "WELCOME zezo"
+        run: echo "WELCOME abdoeid"
